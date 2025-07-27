@@ -1,7 +1,7 @@
 {
   "functions": {
     "src/app/api/login.py": {
-      "runtime": "python3.9"
+      "runtime": "@vercel/python@3.1.0"
     }
   },
   "buildCommand": "npm run build",

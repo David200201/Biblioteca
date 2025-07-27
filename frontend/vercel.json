@@ -1,6 +1,6 @@
 {
   "functions": {
-    "src/app/api/login.py": {
+    "api/login.py": {
       "runtime": "@vercel/python@3.1.0"
     }
   },

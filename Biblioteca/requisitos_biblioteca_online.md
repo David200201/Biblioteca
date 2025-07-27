@@ -47,5 +47,3 @@
 ```
 git config --global credential.helper store
 ```
-
-</rewritten_file>

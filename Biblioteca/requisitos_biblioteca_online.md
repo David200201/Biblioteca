@@ -39,3 +39,13 @@
 
 - **Documentación**: Manuales de usuario y de administración.
 - **Actualizaciones**: Mecanismos para actualizar el sistema y sus dependencias.
+
+## 6. Requisitos de Despliegue
+
+- **Gestor de credenciales**: Configurar el gestor de credenciales de git para almacenar las credenciales de GitHub.
+
+```
+git config --global credential.helper store
+```
+
+</rewritten_file>

@@ -1,5 +1,5 @@
 {
-  "buildCommand": "cd frontend && npm run build",
-  "outputDirectory": "frontend/.next",
-  "installCommand": "cd frontend && npm install"
+  "buildCommand": "cd biblioteca/frontend && npm run build",
+  "outputDirectory": "biblioteca/frontend/.next",
+  "installCommand": "cd biblioteca/frontend && npm install"
 } 

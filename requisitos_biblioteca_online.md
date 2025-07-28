@@ -25,7 +25,8 @@
 
 - **Frontend**: Framework moderno (React, Angular, Vue, etc.).
 - **Backend**: API RESTful o GraphQL, preferiblemente con Node.js, Python, Java, etc.
-- **Base de datos**: Relacional (MySQL, PostgreSQL) o NoSQL (MongoDB).
+- **Base de datos**: SQL Server con Azure SQL Database para administración y gestión de datos.
+- **Base de datos local**: SQLite para desarrollo y pruebas locales.
 - **Almacenamiento**: Para archivos digitales (libros, imágenes de portadas).
 - **Autenticación**: JWT, OAuth2, o similar.
 - **Integraciones**: Pasarelas de pago (si hay libros de pago), servicios de correo electrónico, etc.

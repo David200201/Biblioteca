@@ -1,4 +1,6 @@
 "use client";
+export const dynamic = "force-dynamic";
+
 import RegisterModal from '../../components/RegisterModal';
 import { useRouter } from 'next/navigation';
 import { Suspense } from 'react';

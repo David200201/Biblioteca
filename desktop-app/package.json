@@ -1,0 +1,14 @@
+{
+  "name": "biblioteca-desktop-app",
+  "version": "1.0.0",
+  "description": "Aplicación de escritorio para Biblioteca usando Electron.",
+  "main": "main.js",
+  "scripts": {
+    "start": "electron ."
+  },
+  "author": "David200201",
+  "license": "MIT",
+  "devDependencies": {
+    "electron": "^30.0.0"
+  }
+}

@@ -1,11 +1,13 @@
 'use client'
 
+
 import { useState } from 'react'
 import Header from '../components/Header'
 import Hero from '../components/Hero'
 import BookCatalog from '../components/BookCatalog'
 import LoginModal from '../components/LoginModal'
 import RegisterModal from '../components/RegisterModal'
+import EnviarDatos from '../components/EnviarDatos'
 
 export default function Home() {
   return (
@@ -30,6 +32,8 @@ export default function Home() {
       </header>
       
       <main>
+        {/* Botón para enviar datos al backend o guardar localmente */}
+        <EnviarDatos />
         {/* Hero Section */}
         <section className="bg-gradient-to-r from-blue-600 to-blue-700 text-white">
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-24">

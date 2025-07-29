@@ -62,7 +62,7 @@ CREATE TABLE Loans (
     LoanDate DATETIME2 DEFAULT GETDATE(),
     DueDate DATETIME2 NOT NULL,
     ReturnDate DATETIME2 NULL,
-    Status NVARCHAR(20) DEFAULT 'active', -- active, returned, overdue
+    Status NVARCHAR(20) DEFAULT 'active',
     CreatedAt DATETIME2 DEFAULT GETDATE(),
     UpdatedAt DATETIME2 DEFAULT GETDATE()
 );
@@ -74,7 +74,7 @@ CREATE TABLE Reservations (
     BookID INT FOREIGN KEY REFERENCES Books(BookID),
     ReservationDate DATETIME2 DEFAULT GETDATE(),
     ExpiryDate DATETIME2 NOT NULL,
-    Status NVARCHAR(20) DEFAULT 'pending', -- pending, fulfilled, cancelled, expired
+    Status NVARCHAR(20) DEFAULT 'pending', 
     CreatedAt DATETIME2 DEFAULT GETDATE()
 );
 
@@ -114,7 +114,7 @@ CREATE TABLE DigitalAccess (
 CREATE TABLE Notifications (
     NotificationID INT IDENTITY(1,1) PRIMARY KEY,
     UserID INT FOREIGN KEY REFERENCES Users(UserID),
-    Type NVARCHAR(50), -- loan_due, reservation_available, etc.
+    Type NVARCHAR(50), 
     Title NVARCHAR(100),
     Message NVARCHAR(500),
     IsRead BIT DEFAULT 0,

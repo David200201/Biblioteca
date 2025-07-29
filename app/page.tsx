@@ -20,10 +20,16 @@ export default function Home() {
             </div>
             
             <div className="flex items-center space-x-4">
-              <button className="bg-gray-200 hover:bg-gray-300 text-gray-800 font-medium py-2 px-4 rounded-lg transition-colors">
+              <button
+                className="bg-gray-200 hover:bg-gray-300 text-gray-800 font-medium py-2 px-4 rounded-lg transition-colors"
+                onClick={() => window.location.href = '/login'}
+              >
                 Iniciar Sesión
               </button>
-              <button className="bg-blue-600 hover:bg-blue-700 text-white font-medium py-2 px-4 rounded-lg transition-colors">
+              <button
+                className="bg-blue-600 hover:bg-blue-700 text-white font-medium py-2 px-4 rounded-lg transition-colors"
+                onClick={() => window.location.href = '/register'}
+              >
                 Registrarse
               </button>
             </div>

@@ -1,3 +1,6 @@
+const registerController = require('../controllers/registerController');
+// Registrar nuevo usuario
+router.post('/register', registerController.registerUser);
 const express = require('express');
 const router = express.Router();
 

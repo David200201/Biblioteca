@@ -26,12 +26,30 @@ const RegisterModal: React.FC<RegisterModalProps> = ({ onClose, onSwitchToLogin,
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault()
     setIsLoading(true)
-    
-    // Simulación de registro
-    setTimeout(() => {
-      setIsLoading(false)
-      onRegisterSuccess()
-    }, 1000)
+    try {
+      const response = await fetch('https://biblioteca-63yyy.vercel.app/api/users/register', {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+        },
+        body: JSON.stringify({
+          firstName: formData.firstName,
+          lastName: formData.lastName,
+          email: formData.email,
+          password: formData.password
+        })
+      });
+      const result = await response.json();
+      setIsLoading(false);
+      if (result.success) {
+        onRegisterSuccess();
+      } else {
+        alert(result.message || 'Error al registrar usuario');
+      }
+    } catch (error: any) {
+      setIsLoading(false);
+      alert('Error al registrar usuario: ' + error.message);
+    }
   }
 
   return (

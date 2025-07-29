@@ -1,8 +1,8 @@
-'use client';
-import { useState } from 'react';
+"use client";
+import { useState, Suspense } from 'react';
 import { useRouter, useSearchParams } from 'next/navigation';
 
-export default function LoginPage() {
+function LoginContent() {
   const router = useRouter();
   const params = useSearchParams();
   const [form, setForm] = useState({ email: '', password: '' });
@@ -88,5 +88,13 @@ export default function LoginPage() {
         </div>
       </form>
     </div>
+  );
+}
+
+export default function LoginPage() {
+  return (
+    <Suspense fallback={<div>Cargando...</div>}>
+      <LoginContent />
+    </Suspense>
   );
 }

@@ -1,3 +1,4 @@
+"use client";
 import RegisterModal from '../../components/RegisterModal';
 import { useRouter } from 'next/navigation';
 
